@@ -543,3 +543,198 @@ mark {
     background: #3b82f6;
     color: white;
 }
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .search-container {
+        margin-bottom: 2rem;
+    }
+
+    #search-input {
+        font-size: 1rem;
+        padding: 1rem 1rem 1rem 2.75rem;
+        border-radius: 12px;
+    }
+
+    .search-icon {
+        left: 1rem;
+        font-size: 1rem;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .filter-select {
+        min-width: unset;
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.65rem 0.75rem;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .card-header {
+        gap: 0.75rem;
+    }
+
+    .card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .card-title {
+        font-size: 1.05rem;
+    }
+
+    .card-filename {
+        font-size: 0.75rem;
+    }
+
+    .card-snippet {
+        font-size: 0.85rem;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 0.65rem 1rem;
+    }
+
+    /* Modal Mobile */
+    .modal-content {
+        width: 95%;
+        max-height: 85vh;
+        border-radius: 16px;
+    }
+
+    .modal-header {
+        padding: 1.5rem 1.25rem 1rem;
+    }
+
+    #modal-title {
+        font-size: 1.35rem;
+    }
+
+    .modal-body {
+        padding: 1.25rem;
+    }
+
+    .modal-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .modal-section h3 {
+        font-size: 1.05rem;
+    }
+
+    .modal-snippet {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .fees-section {
+        padding: 1.25rem;
+    }
+
+    .fee-card {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .btn-fee {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .container {
+        padding: 0.75rem;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+    }
+
+    #search-input {
+        font-size: 0.9rem;
+        padding: 0.85rem 0.85rem 0.85rem 2.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .card-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 0.95rem;
+    }
+
+    .tag {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .modal-content {
+        width: 98%;
+        max-height: 90vh;
+    }
+
+    .modal-header {
+        padding: 1.25rem 1rem 0.75rem;
+    }
+
+    #modal-title {
+        font-size: 1.15rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+}
