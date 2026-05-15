@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Search Engine | University Data</title>
+    <link rel="stylesheet" href="/styles.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background-mesh"></div>
+    
+    <div class="container">
+        <header style="justify-content: center; border-bottom: none;">
+            <h1 class="hero-title">Search your University & Details</h1>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search for 'Computer Science', 'MBA', etc..." autocomplete="off">
+                </div>
+                
+                <div class="filters-container">
+                    <select id="university-filter" class="filter-select">
+                        <option value="">All Universities</option>
+                    </select>
+                    
+                    <select id="course-filter" class="filter-select" disabled>
+                        <option value="">All Courses</option>
+                    </select>
+                    
+                    <select id="type-filter" class="filter-select">
+                        <option value="">All Document Types</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="results-container">
+                <div id="loading" class="hidden">
+                    <div class="spinner"></div>
+                    <p>Searching database...</p>
+                </div>
+                
+                <div id="status-message" class="hidden"></div>
+                
+                <div id="results-grid" class="results-grid">
+                    <!-- Results will be injected here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Course Details Modal -->
+    <div id="course-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-university-tag" id="modal-university"><i class="fas fa-university"></i> University</div>
+                <h2 id="modal-title">Course Title</h2>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3><i class="fas fa-info-circle"></i> Course Description</h3>
+                    <div id="modal-snippet" class="modal-snippet"></div>
+                    <button id="modal-view-brochure" class="btn-primary mt-3">View Full Brochure</button>
+                </div>
+                
+                <div class="modal-section fees-section">
+                    <h3><i class="fas fa-money-bill-wave"></i> Fee Structures & Pricing</h3>
+                    <p class="fees-description">Below are the relevant fee structures for this university.</p>
+                    <div id="modal-fees-container" class="fees-container">
+                        <!-- Fees links will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js?v=4"></script>
+</body>
+</html>

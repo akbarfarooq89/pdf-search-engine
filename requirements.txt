@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pymupdf
+pytesseract
+pillow
+python-multipart
+supabase
+python-dotenv

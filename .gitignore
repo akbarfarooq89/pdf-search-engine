@@ -1,0 +1,19 @@
+venv/
+__pycache__/
+*.pyc
+.env
+pdfs/
+backend/courses.db
+backend/courses.db-shm
+backend/courses.db-wal
+.vscode/
+.DS_Store
+scratch/
+
+# Secret files - NEVER push these
+credentials.json
+client_secrets.json
+token.json
+
+# Large binaries
+cloudflared.exe
